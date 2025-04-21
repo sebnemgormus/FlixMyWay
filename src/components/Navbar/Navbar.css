@@ -157,8 +157,15 @@
     .Navbar img {
         height: 20px;
     }
+    .Navbar-right .profile {
+        width: 24px;
+    }
     .Navbar-right {
         gap: 10px;
+    }
+    .search-input.visible {
+        width: 80px;
+        opacity: 1;
     }
 }
 

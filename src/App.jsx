@@ -12,6 +12,7 @@ import Movies from './pages/Movies/Movies'
 import NewPopular from './pages/NewPopular/NewPopular'
 import MyList from './pages/MyList/MyList'
 import Browse from './pages/Browse/Browse'
+import Search from './pages/Search/Search'
 
 function App() {
 
@@ -41,6 +42,7 @@ function App() {
        <Route path='/languages' element={ <Browse/>}/>
        <Route path='/login' element={ <Login/>}/>
        <Route path='/player/:id' element={ <Player/>}/>
+       <Route path='/search' element={ <Search/>}/>
       </Routes>
     </div>
   )
