@@ -1,12 +1,21 @@
-# React + Vite
+# flixmyway
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+flixmyway is a modern, responsive web app that reimagines core Netflix features. Built with React.js and Firebase, it offers a smooth and dynamic user experience. 
 
-Currently, two official plugins are available:
+## 🔑 Key Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- **🔐 User Authentication** — Secure sign-up and log-in functionality powered by Firebase Authentication.
+- **🎬 Dynamic Movie Listings** — Real-time movie data fetched from the TMDB API.
+- **📄 Interactive Modals** — Detailed movie information is displayed via custom modals triggered by “More Info” buttons.
+- **🔍 Live Search** — Instantly filter and discover movies with responsive search functionality.
+- **🚀 Routing** — Smooth, fast page transitions using React Router.
+- **🎞️ Trailer Playback** — Watch movie trailers directly within the app.
+- **⚡ Performance-Optimized** — Built with scalability, speed, and responsiveness.
 
-## Expanding the ESLint configuration
+## 🛠️ Tech Stack
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- **React.js** — Powering the UI with reusable, high-performance components.
+- **Firebase** — Manages authentication and offers scalable backend services.
+- **TMDb API** — Supplies up-to-date movie content, including metadata and trailers.
+- **React Router** — Manages navigation between pages for smooth, instant transitions.
+- **CSS (Custom)** — Ensures a responsive and polished layout across all devices.
