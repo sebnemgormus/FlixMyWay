@@ -1,6 +1,6 @@
-# flixmyway
+# flixmyway | A Personalized Reimagination of Netflix
 
-flixmyway is a modern, responsive web app that reimagines core Netflix features. Built with React.js and Firebase, it offers a smooth and dynamic user experience. 
+A modern, responsive web app that reimagines core Netflix features for educational purposes. Built with React.js and Firebase, it delivers a smooth and dynamic user experience.
 
 ## 🔑 Key Features
 
