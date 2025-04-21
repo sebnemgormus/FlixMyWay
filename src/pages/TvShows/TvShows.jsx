@@ -1,4 +1,4 @@
-import React from "react";
+import React, { useState } from "react";
 import hero_tvshows from "../../assets/hero-tvshows.jpg";
 import hero_tvshows_title from "../../assets/hero_tvshows_title.png";
 import play_icon from "../../assets/play_icon.png";
@@ -6,11 +6,27 @@ import info_icon from "../../assets/info_icon.png";
 import TitleCards from "../../components/TitleCards/TitleCards";
 import Footer from "../../components/Footer/Footer";
 import Navbar from "../../components/Navbar/Navbar";
+import MovieModal from "../../components/MovieModal/MovieModal";
 
 const TvShows = () => {
+  const [showModal, setShowModal] = useState(false);
+
+  const heroMovie = {
+    title: "The Big Bang Theory",
+    year: "2007",
+    episodes: 279,
+    maturity: "16+",
+    description:
+      "Physicists Leonard and Sheldon find their nerd-centric social circle with pals Howard and Raj expanding when aspiring actress Penny moves in next door.",
+    cast: "Johnny Galecki, Jim Parsons, Kaley Cuoco, Simon Helberg, Kunal Nayyar",
+    genres: ["TV Dramas", "Comedy", "Sitcom"],
+    tags: ["Offbeat", "Quirky", "Intelligent Humor"],
+    image: hero_tvshows,
+  };
+
   return (
     <div className="tvshows">
-      <Navbar/>
+      <Navbar />
       <div className="hero">
         <img src={hero_tvshows} alt="" className="banner-img" />
         <div className="hero-caption">
@@ -25,7 +41,7 @@ const TvShows = () => {
               <img src={play_icon} alt="" />
               Play
             </button>
-            <button className="btn dark-btn">
+            <button className="btn dark-btn" onClick={() => setShowModal(true)}>
               <img src={info_icon} alt="" />
               More Info
             </button>
@@ -40,6 +56,10 @@ const TvShows = () => {
         <TitleCards title={"Top Pics for You"} category={"now_playing"} />
       </div>
       <Footer />
+
+      {showModal && (
+        <MovieModal movie={heroMovie} onClose={() => setShowModal(false)} />
+      )}
     </div>
   );
 };
